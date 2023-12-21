@@ -51,8 +51,8 @@ export const Navigation = (props) => {
                 Resources
               </a>
             </li>
-            {/* <li>
-            <button type="button" class="btn btn-outline-dark">Dark</button>
+            {/* <li style={{marginLeft: "auto"}}> 
+            <button type="button" class="">Dark</button>
             </li> */}
 
             {/* <li>
