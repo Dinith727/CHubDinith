@@ -267,7 +267,6 @@ a:focus,
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 10px;
 }
 .intro h1 span {
   font-weight: 800;
@@ -279,12 +278,10 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
 }
 header .intro-text {
   padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
+  padding-bottom: 100px;
 }
 /* Features Section */
 #features {
