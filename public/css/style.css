@@ -190,7 +190,7 @@ hr {
 .btn-custom-c {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: white; 
+  color: white;
   background-color: #068808;
   /* background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
   /* padding: 14px 34px; */
@@ -198,7 +198,7 @@ hr {
   margin: 0;
   font-size: 15px;
   font-weight: 500;
- 
+
   transition: all 0.5s linear;
   border: 0;
 }
@@ -230,7 +230,7 @@ hr {
   margin: 0;
   font-size: 15px;
   font-weight: 500;
-  
+
   transition: all 0.5s linear;
   border: 0;
   width: 100%;
@@ -261,11 +261,10 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
   color: #fff;
-  font-size: 82px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 500;
   margin-top: 0;
 }
 .intro h1 span {
