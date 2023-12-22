@@ -12,7 +12,7 @@ export const Header = (props) => {
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
                 <h1>
                   {props.data ? props.data.title : "Loading"}
-                  <span></span>
+                  
                 </h1>
               </div>
             </div>

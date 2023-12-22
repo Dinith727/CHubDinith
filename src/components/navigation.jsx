@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { Row, Col, Button } from "react-bootstrap";
+
 
 export const Navigation = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const buttonStyle = {
+    marginTop:"40px",
+    backgroundColor: isHovered ? 'black' : 'white',
+    color: isHovered ? 'white' : 'black',
+    border: '2px solid black',
+    borderRadius: '30px',
+    padding: '10px 40px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s, color 0.3s',
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -51,25 +66,15 @@ export const Navigation = (props) => {
                 Resources
               </a>
             </li>
-            {/* <li style={{marginLeft: "auto"}}> 
-            <button type="button" class="">Dark</button>
-            </li> */}
-
-            {/* <li>
-              <a href="#testimonials" className="page-scroll">
-                Tools & Technologies
-              </a>
-            </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li> */}
-            {/* <li>
-              <a href="#contact" className="page-scroll">
-                Contact
-              </a>
-            </li> */}
+            <Button
+               style={buttonStyle}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              Learn More
+            </Button>
+            </li>
           </ul>
         </div>
       </div>
