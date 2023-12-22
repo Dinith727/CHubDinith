@@ -4,11 +4,11 @@ import { Row, Col } from "react-bootstrap";
 
 const agendaData = [
   { id: 1, title: "Embedded Systems Development", imageUrl: "img/img.png" },
-  { id: 2, title: "Item 2", imageUrl: "img/about.jpg" },
-  { id: 3, title: "Item 3", imageUrl: "img/plane1.png" },
-  { id: 4, title: "Item 1", imageUrl: "img/img.png" },
-  { id: 5, title: "Item 2", imageUrl: "img/about.jpg" },
-  { id: 6, title: "Item 3", imageUrl: "img/plane1.png" },
+  { id: 2, title: "System Integration", imageUrl: "img/about.jpg" },
+  { id: 3, title: "Test Automation", imageUrl: "img/plane1.png" },
+  { id: 4, title: "Professional Services", imageUrl: "img/img.png" },
+  { id: 5, title: "Application Development", imageUrl: "img/about.jpg" },
+  { id: 6, title: "Verification and Validation", imageUrl: "img/plane1.png" },
   // Add more items as needed
 ];
 
