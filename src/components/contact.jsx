@@ -43,7 +43,7 @@ export const Contact = () => {
               </Col>
             </Col>
             <Col md={3}>
-              <h3 style={h3StyleRegular}>What We Do</h3>
+              <h3 style={h3StyleRegular}>WHAT WE DO</h3>
 
               <ul style={ulStyle}>
                 <li style={liStyle}>Product development</li>
@@ -55,7 +55,7 @@ export const Contact = () => {
               </ul>
             </Col>
             <Col md={3}>
-              <h3 style={h3StyleRegular}>Industries</h3>
+              <h3 style={h3StyleRegular}>INDUSTRIES</h3>
               <ul style={ulStyle}>
                 <li style={liStyle}>Aerospace & Defense</li>
                 <li style={liStyle}>Medical Devices</li>
@@ -76,9 +76,9 @@ export const Contact = () => {
               <span style={liStyle}>Careers</span>
             </Col>
             <Col md={3}>
-              <i style={{ marginRight: "20px", height:"200px" }} className="fa fa-facebook"></i>
+              <i style={{ marginRight: "20px", height:"200px" }} className="fa fa-linkedin"></i>
+              <i style={{ marginRight: "20px", height:"200px" }}className="fa fa-instagram"></i>
               <i className="fa fa-twitter"></i>
-              <i className="fa fa-youtube"></i>
             </Col>
           </Row>
         </div>
