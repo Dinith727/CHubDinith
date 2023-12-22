@@ -47,20 +47,17 @@ export const Services = () => {
   return (
     <div className="container">
       <Row style={row}>
-        <Col  md={4}>
+        <Col md={4}>
           <Col md={11}>
-          <h3 style={boldWordStyle}>
-           CAREERS
-            </h3>
+            <h3 style={boldWordStyle}>CAREERS</h3>
             <h1 style={h1StyleRegular}>
-              Be a part of <br /> our story <br /> 
-              {/* {" "}
-              <span style={boldWordStyle}>embedded finance engine</span> */}
+              Be a part of <br /> our story <br />
             </h1>
           </Col>
           <Col md={11}>
             <h3 style={h3StyleRegular}>
-            At Avero, we're always looking for creative problem solvers to join our team
+              At Avero, we're always looking for creative problem solvers to
+              join our team
             </h3>
             <Button
               style={{ ...buttonStyle, ...h3StyleRegular }}
