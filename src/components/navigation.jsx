@@ -33,7 +33,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="page-scroll" href="#page-top">
-            <img src={require("../assets/images/48858.png")} height={50} />{" "}
+            <img src="/img/48858.png" height={50} />{" "}
           </a>{" "}
         </div>
 

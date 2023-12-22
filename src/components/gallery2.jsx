@@ -54,7 +54,7 @@ export const Gallery2 = () => {
         <Col style={{ marginTop: "80px" }} md={6}>
           <Col md={11}>
             <h1 style={h1StyleRegular}>
-              The Avero <br /> Difference{" "}
+              The test testAvero <br /> Difference{" "}
               <span style={boldWordStyle}>embedded finance engine</span>
             </h1>
           </Col>

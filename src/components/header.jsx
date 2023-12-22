@@ -8,12 +8,8 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className=" intro-text">
-                
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  
-                </h1>
+                <h1>{props.data ? props.data.title : "Loading"}</h1>
               </div>
             </div>
           </div>
