@@ -66,7 +66,7 @@ export const Navigation = (props) => {
                 Resources
               </a>
             </li>
-            <li>
+            {/* <li>
             <Button
                style={buttonStyle}
               onMouseEnter={() => setIsHovered(true)}
@@ -74,7 +74,7 @@ export const Navigation = (props) => {
             >
               Learn More
             </Button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

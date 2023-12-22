@@ -34,7 +34,7 @@ export const Services = () => {
   };
 
   const buttonStyle = {
-    marginTop: "60px",
+    marginTop: "20px",
     backgroundColor: isHovered ? "black" : "white",
     color: isHovered ? "white" : "black",
     border: "2px solid black",
