@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = (props) => {
+export const Header = () => {
   return (
     <header id="header">
       <div className="intro">
@@ -8,8 +8,8 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className=" intro-text">
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <h1>{props.data ? props.data.title : "Loading"}</h1>
+                <p>Extra Aspirational</p>
+                <h1>Avero. Pushing engineering forward.</h1>
               </div>
             </div>
           </div>
