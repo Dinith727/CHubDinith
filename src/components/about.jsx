@@ -12,14 +12,13 @@ export const About = () => {
     letterSpacing: "0em",
     textAlign: "left",
     marginTop: "0",
-    color: "black", // Adjust as needed
+    color: "black",
   };
 
   const h3StyleRegular = {
     fontFamily: "sans-serif",
     fontWeight: 80,
     lineHeight: "34px",
-    // Adjust as needed
   };
 
   const boldWordStyle = {
@@ -27,7 +26,7 @@ export const About = () => {
   };
 
   const buttonStyle = {
-    marginTop: "40px",
+    marginTop: "60px",
     backgroundColor: isHovered ? "black" : "white",
     color: isHovered ? "white" : "black",
     border: "2px solid black",
@@ -39,8 +38,8 @@ export const About = () => {
 
   return (
     <div className="container">
-      <Row style={{ marginTop: "20px" }}>
-        <Col style={{ marginTop: "100px" }} md={6}>
+      <Row>
+        <Col style={{ marginTop: "80px" }} md={6}>
           <Col md={11}>
             <h1 style={h1StyleRegular}>
               The Avero <br /> Difference{" "}
@@ -62,7 +61,7 @@ export const About = () => {
             </Button>
           </Col>
         </Col>
-        <Col md={6}>
+        <Col style={{ marginTop: "10px" }} md={6}>
           <img src="img/img.png" className="img-responsive" alt="" />
         </Col>
       </Row>

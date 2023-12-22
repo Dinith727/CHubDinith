@@ -1,25 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { Row, Col } from "react-bootstrap";
 
-export const Features = (props) => {
+export const Features = () => {
+  const [hoveredCol, setHoveredCol] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredCol(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCol(null);
+  };
+
+  const columns = [
+    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
+    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
+    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
+    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
+  ];
+
   return (
-    <div id="features" className="text-center">
-      <div className="container">
-        <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Domain</h2>
-        </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-md-6">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
-                </div>
-              ))
-            : "Loading..."}
-        </div>
-      </div>
+    <div className="container">
+      <Row>
+        {columns.map((col, index) => (
+          <Col key={index} style={{ marginTop: "10px" }} lg={3}>
+            <img
+              src={hoveredCol === index ? col.hoveredImage : col.image}
+              className="img-responsive"
+              alt=""
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            />
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };
