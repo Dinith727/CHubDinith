@@ -29,7 +29,7 @@ export const Gallery = () => {
   };
 
   return (
-    <div className="container">
+    <div style={row} className="container">
       <Row>
         <Col md={11}>
           <h3 style={boldWordStyle}>OUR WORK</h3>

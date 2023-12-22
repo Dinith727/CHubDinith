@@ -39,16 +39,17 @@ const App = () => {
       {/* <Cards/> */}
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
-      <Gallery2 data={landingPageData.Gallery2} />
-      <PPOne data={landingPageData.ProgressPresOne} />
-      <Research data={landingPageData.ResearchPaper} />
+      <Services data={landingPageData.Services} />
+
+      {/* <Gallery2 data={landingPageData.Gallery2} />
+      <PPOne data={landingPageData.ProgressPresOne} /> */}
+      {/* <Research data={landingPageData.ResearchPaper} />
       <PPtwo data={landingPageData.ProgressPresTwo} />
       <StatusDocTwo data={landingPageData.StatusDocTwo} />
       <FinalReports data={landingPageData.FinalReps} />
       <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
+      <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />
     </div>
   );
