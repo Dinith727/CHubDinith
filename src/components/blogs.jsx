@@ -12,7 +12,7 @@ export const Blogs = () => {
           "https://api.slingacademy.com/v1/sample-data/blog-posts?offset=5&limit=4"
         );
         const result = await response.json();
-        console.log(result);
+        // console.log(result);
         setData(result.blogs);
       } catch (error) {
         console.error("Error fetching data:", error);

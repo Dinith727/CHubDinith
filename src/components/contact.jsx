@@ -66,9 +66,9 @@ export const Contact = () => {
           </Row>
           <Row style={row}>
             <Col md={6} className="d-flex justify-content-between">
-              <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
+              <span style={{ ...liStyle, marginRight: "20px" }}>Terms & Conditions</span>
 
-              <span style={liStyle}>Careers</span>
+              <span style={liStyle}>Privacy Policy</span>
             </Col>
             <Col md={3}>
               <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
