@@ -1,98 +1,83 @@
-// import { Image } from "./image";
-// import React from "react";
+import React, { useState } from "react";
+import { Row, Col, Button } from "react-bootstrap";
 
-// export const Gallery = (props) => {
-//   return (
-//     <div id="portfolio" className="text-center">
-//       <div className="container">
-//         <div className="section-title">
-//           <h2>Documents</h2>
+export const Gallery = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const row = {
+    marginTop: "100px",
+    marginBottom: "100px",
+  };
 
-//         </div>
-//         <div className="row">
-//           <div className="portfolio-items">
-//             {props.data
-//               ? props.data.map((d, i) => (
-//                   <div
-//                     key={`${d.title}-${i}`}
-//                     className="col-sm-6 col-md-4 col-lg-4"
-//                   >
-//                     <Image
-//                       title={d.title}
-//                       largeImage={d.largeImage}
-//                       smallImage={d.smallImage}
-//                     />
-//                   </div>
-//                 ))
-//               : "Loading..."}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+  const h1StyleRegular = {
+    fontFamily: "sans-serif",
+    fontSize: "48px",
+    fontWeight: 100,
+    lineHeight: "64px",
+    letterSpacing: "0em",
+    textAlign: "left",
+    marginTop: "0",
+    color: "black",
+  };
 
-import { Image } from "./image";
-import React from "react";
+  const h3StyleRegular = {
+    fontFamily: "sans-serif",
+    fontWeight: 80,
+    lineHeight: "34px",
+  };
 
-export const Gallery = (props) => {
-  const downloadPDF = (url, fileName) => {
-    const link = document.createElement("a");
-    link.href = url;
-    link.target = "_blank";
-    link.download = fileName;
-    link.click();
+  const boldWordStyle = {
+    fontFamily: "sans-serif",
+    fontSize: "16px",
+    fontWeight: "304",
+    textAlign: "left",
+    color: "black",
+  };
+
+  const buttonStyle = {
+    marginTop: "60px",
+    backgroundColor: isHovered ? "black" : "white",
+    color: isHovered ? "white" : "black",
+    border: "2px solid black",
+    borderRadius: "30px",
+    padding: "10px 40px",
+    cursor: "pointer",
+    transition: "background-color 0.3s, color 0.3s",
   };
 
   return (
-    <div id="portfolio" className="text-center">
-      <div className="container">
-        <div className="section-title">
-          <h2>Documents</h2>
-        </div>
-        <button className="horizontal-line">Project Proposal Documents</button>
-        <div className="row">
-          <div
-            style={{
-              marginTop: "10px",
-            }}
-            className="portfolio-items"
-          >
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-3"
-                    style={{
-                      marginTop: "10px",
-                      marginBottom: "20px",
-                    }}
-                  >
-                    <img
-                      src={d.smallImage}
-                      alt="..."
-                      className=""
-                      style={{
-                        marginBottom: "10px",
-                        width: "120px",
-                        height: "120px",
-                      }}
-                    />
-                    <div className="caption">
-                      <h4>{d.title}</h4>
-                    </div>
-                    <button
-                      className="btn btn-custom-c"
-                      onClick={() => downloadPDF(d.url, d.title + ".pdf")}
-                    >
-                      Download PDF
-                    </button>
-                  </div>
-                ))
-              : "Loading..."}
-          </div>
-        </div>
-      </div>
+    <div className="container">
+      <Row style={row}>
+        <Col  md={4}>
+          <Col md={11}>
+          <h3 style={boldWordStyle}>
+           CAREERS
+            </h3>
+            <h1 style={h1StyleRegular}>
+              Be a part of <br /> our story <br /> 
+              {/* {" "}
+              <span style={boldWordStyle}>embedded finance engine</span> */}
+            </h1>
+          </Col>
+          <Col md={11}>
+            <h3 style={h3StyleRegular}>
+            At Avero, we're always looking for creative problem solvers to join our team
+            </h3>
+            <Button
+              style={{ ...buttonStyle, ...h3StyleRegular }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              Join Now
+            </Button>
+          </Col>
+        </Col>
+        <Col style={{ marginTop: "10px" }} md={4}>
+          <img src="img/img.png" className="img-responsive" alt="" />
+        </Col>
+        <Col style={{ marginTop: "10px" }} md={4}>
+          <img src="img/img.png" className="img-responsive" alt="" />
+        </Col>
+      </Row>
     </div>
   );
 };

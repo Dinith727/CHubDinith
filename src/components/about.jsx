@@ -3,6 +3,10 @@ import { Row, Col, Button } from "react-bootstrap";
 
 export const About = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const row = {
+    marginTop: "100px",
+    marginBottom: "100px",
+  };
 
   const h1StyleRegular = {
     fontFamily: "sans-serif",
@@ -38,7 +42,7 @@ export const About = () => {
 
   return (
     <div className="container">
-      <Row>
+      <Row style={row}>
         <Col style={{ marginTop: "80px" }} md={6}>
           <Col md={11}>
             <h1 style={h1StyleRegular}>
