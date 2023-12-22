@@ -1,19 +1,31 @@
 import React, { useState } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import Table from "react-bootstrap/Table";
+import { Row, Col } from "react-bootstrap";
 
-export const Gallery2 = () => {
-  const [isHovered, setIsHovered] = useState(false);
+const agendaData = [
+  { id: 1, title: "Item 1", imageUrl: "img/img.png" },
+  { id: 2, title: "Item 2", imageUrl: "img/about.jpg" },
+  { id: 3, title: "Item 3", imageUrl: "img/plane1.png" },
+  // Add more items as needed
+];
 
-  const footerStyle = {
-    backgroundColor: "#f8f9fa", // Set the background color as needed
-    padding: "20px 0", // Adjust the padding as needed
-    textAlign: "center",
+const Gallery2 = () => {
+  const [hoveredItemId, setHoveredItemId] = useState(1);
+
+  const handleItemHover = (itemId) => {
+    setHoveredItemId(itemId);
   };
-
 
   const row = {
     marginTop: "100px",
     marginBottom: "100px",
+  };
+
+  const agendaItemStyle = {
+    cursor: "pointer",
+    padding: "10px",
+    marginBottom: "5px",
+    border: "1px solid #ccc",
   };
 
   const h1StyleRegular = {
@@ -37,46 +49,88 @@ export const Gallery2 = () => {
     fontWeight: 700,
   };
 
-  const buttonStyle = {
-    marginTop: "60px",
-    backgroundColor: isHovered ? "black" : "white",
-    color: isHovered ? "white" : "black",
-    border: "2px solid black",
-    borderRadius: "30px",
-    padding: "10px 40px",
-    cursor: "pointer",
-    transition: "background-color 0.3s, color 0.3s",
+  const hoveredItemStyle = {
+    backgroundColor: "#f0f0f0",
+  };
+
+  const imageStyle = {
+    maxWidth: "100%",
+    height: "auto",
+    border: "1px solid #ccc",
   };
 
   return (
-    <div className="container">
-      <Row style={footerStyle}>
+    <div style={row} className="container">
+      <Row>
         <Col style={{ marginTop: "80px" }} md={6}>
           <Col md={11}>
             <h1 style={h1StyleRegular}>
-              The test testAvero <br /> Difference{" "}
-              <span style={boldWordStyle}>embedded finance engine</span>
+              Lorem ipsum <br />
+              <span style={boldWordStyle}>connecter</span> Auctor
             </h1>
           </Col>
-          <Col md={11}>
-            <h3 style={h3StyleRegular}>
-              Trusted experts who go the extra mile for customers to provide
-              turn-key solutions, complete system integration, and comprehensive
-              support.
-            </h3>
-            <Button
-              style={{ ...buttonStyle, ...h3StyleRegular }}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              Learn More
-            </Button>
-          </Col>
+          <Col md={11}></Col>
         </Col>
-        <Col style={{ marginTop: "10px" }} md={6}>
-          <img src="img/img.png" className="img-responsive" alt="" />
+      </Row>
+      <Row>
+        <Col md={6}>
+          <Table striped bordered hover>
+            <tbody>
+              {agendaData.map((item) => (
+                <tr
+                  key={item.id}
+                  onMouseEnter={() => handleItemHover(item.id)}
+                  onMouseLeave={() => handleItemHover(null)}
+                >
+                  <td>{item.id}</td>
+                  <td>{item.title}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </Col>
+        <Col md={6}>
+          {hoveredItemId !== null && (
+            <img
+              src={
+                agendaData.find((item) => item.id === hoveredItemId)?.imageUrl
+              }
+              alt={`Item ${hoveredItemId}`}
+              style={imageStyle}
+            />
+          )}
         </Col>
       </Row>
     </div>
+    // <div style={{ display: "flex", alignItems: "flex-start" }}>
+    //   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+    //     {agendaData.map((item) => (
+    //       <li
+    //         key={item.id}
+    //         style={{
+    //           ...agendaItemStyle,
+    //           ...(hoveredItemId === item.id ? hoveredItemStyle : {}),
+    //         }}
+    //         onMouseEnter={() => handleItemHover(item.id)}
+    //         onMouseLeave={() => handleItemHover(null)}
+    //       >
+    //         <h3>{item.id}</h3>
+    //         <h3>{item.title}</h3>
+
+    //       </li>
+    //     ))}
+    //   </ul>
+    //   <div style={{ marginLeft: "20px" }}>
+    //     {hoveredItemId !== null && (
+    //       <img
+    //         src={agendaData.find((item) => item.id === hoveredItemId)?.imageUrl}
+    //         alt={`Item ${hoveredItemId}`}
+    //         style={imageStyle}
+    //       />
+    //     )}
+    //   </div>
+    // </div>
   );
 };
+
+export default Gallery2;

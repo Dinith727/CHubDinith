@@ -5,7 +5,7 @@ import { Nuclear } from "./components/Nuclear";
 import { TheAveroDifference } from "./components/TheAveroDifference";
 import { Careers } from "./components/Careers";
 import { OurWork } from "./components/OurWork";
-import { Gallery2 } from "./components/gallery2";
+import  Gallery2  from "./components/gallery2";
 import { Footer } from "./components/Footer";
 import "./App.css";
 import { Traditional } from "./components/traditional";
