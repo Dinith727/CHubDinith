@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 
-export const Features = () => {
+export const Nuclear = () => {
   const [hoveredCol, setHoveredCol] = useState(null);
 
   const row = {

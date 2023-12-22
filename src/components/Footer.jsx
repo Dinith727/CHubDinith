@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-export const Contact = () => {
+export const Footer = () => {
   const row = {
     marginTop: "100px",
   };

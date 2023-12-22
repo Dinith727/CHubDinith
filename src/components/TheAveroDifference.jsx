@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
-export const About = () => {
+export const TheAveroDifference = () => {
   const [isHovered, setIsHovered] = useState(false);
   const row = {
     marginTop: "100px",

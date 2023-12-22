@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Row, Col } from "react-bootstrap";
 
-export const Gallery = () => {
-  const [isHovered, setIsHovered] = useState(false);
+export const OurWork = () => {
   const row = {
     marginTop: "100px",
     marginBottom: "100px",
@@ -18,7 +17,6 @@ export const Gallery = () => {
     marginTop: "0",
     color: "black",
   };
-
 
   const boldWordStyle = {
     fontFamily: "sans-serif",

@@ -1,15 +1,15 @@
 import React from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
+import { Nuclear } from "./components/Nuclear";
+import { TheAveroDifference } from "./components/TheAveroDifference";
+import { Careers } from "./components/Careers";
+import { OurWork } from "./components/OurWork";
 import { Gallery2 } from "./components/gallery2";
-import { Contact } from "./components/contact";
+import { Footer } from "./components/Footer";
 import "./App.css";
 import { Traditional } from "./components/traditional";
-import { Blogs } from "./components/blogs";
+import { Blogs } from "./components/Blogs";
 
 const App = () => {
   return (
@@ -17,13 +17,13 @@ const App = () => {
       <Navigation/>
       <Header/>
       <Traditional/>
-      <Features/>
+      <Nuclear/>
       <Gallery2/>
-      <About/>
-      <Gallery/>
+      <TheAveroDifference/>
+      <OurWork/>
       <Blogs/>
-      <Services/>
-      <Contact/>
+      <Careers/>
+      <Footer/>
     </div>
   );
 };
