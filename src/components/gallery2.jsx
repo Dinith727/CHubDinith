@@ -3,9 +3,12 @@ import Table from "react-bootstrap/Table";
 import { Row, Col } from "react-bootstrap";
 
 const agendaData = [
-  { id: 1, title: "Item 1", imageUrl: "img/img.png" },
+  { id: 1, title: "Embedded Systems Development", imageUrl: "img/img.png" },
   { id: 2, title: "Item 2", imageUrl: "img/about.jpg" },
   { id: 3, title: "Item 3", imageUrl: "img/plane1.png" },
+  { id: 4, title: "Item 1", imageUrl: "img/img.png" },
+  { id: 5, title: "Item 2", imageUrl: "img/about.jpg" },
+  { id: 6, title: "Item 3", imageUrl: "img/plane1.png" },
   // Add more items as needed
 ];
 
@@ -17,15 +20,9 @@ const Gallery2 = () => {
   };
 
   const row = {
+    height: "50vh",
     marginTop: "100px",
     marginBottom: "100px",
-  };
-
-  const agendaItemStyle = {
-    cursor: "pointer",
-    padding: "10px",
-    marginBottom: "5px",
-    border: "1px solid #ccc",
   };
 
   const h1StyleRegular = {
@@ -49,13 +46,9 @@ const Gallery2 = () => {
     fontWeight: 700,
   };
 
-  const hoveredItemStyle = {
-    backgroundColor: "#f0f0f0",
-  };
-
   const imageStyle = {
-    maxWidth: "100%",
-    height: "auto",
+    width: "auto",
+    height: "30vh",
     border: "1px solid #ccc",
   };
 
@@ -80,9 +73,9 @@ const Gallery2 = () => {
                 <tr
                   key={item.id}
                   onMouseEnter={() => handleItemHover(item.id)}
-                  onMouseLeave={() => handleItemHover(null)}
+                  onMouseLeave={() => handleItemHover(item.id)}
                 >
-                  <td>{item.id}</td>
+                  <td>0{item.id}</td>
                   <td>{item.title}</td>
                 </tr>
               ))}
@@ -99,6 +92,11 @@ const Gallery2 = () => {
               style={imageStyle}
             />
           )}
+          <h3 style={h3StyleRegular}>
+            Access to the right engineering staff and embedded control systems
+            expertise to design and integrate your product correctly, the first
+            time.
+          </h3>
         </Col>
       </Row>
     </div>
