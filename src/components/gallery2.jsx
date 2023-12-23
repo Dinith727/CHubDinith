@@ -20,7 +20,7 @@ const Gallery2 = () => {
   };
 
   const row = {
-    height: "50vh",
+  
     marginTop: "100px",
     marginBottom: "160px",
   };

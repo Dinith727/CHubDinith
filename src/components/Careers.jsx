@@ -70,10 +70,10 @@ export const Careers = () => {
           </Col>
         </Col>
         <Col style={{ marginTop: "10px" }} md={4}>
-          <img src="img/img.png" className="img-responsive" alt="" />
+          <img src="img/Rectangle8.png" className="img-responsive" alt="" />
         </Col>
         <Col style={{ marginTop: "10px" }} md={4}>
-          <img src="img/img.png" className="img-responsive" alt="" />
+          <img src="img/Rectangle9.png" className="img-responsive" alt="" />
         </Col>
       </Row>
     </div>

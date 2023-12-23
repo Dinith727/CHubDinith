@@ -43,6 +43,7 @@ export const OurWork = () => {
     position: "absolute",
     bottom: "0",
     left: "0",
+    fontSize: "20px",
     width: "100%",
     padding: "10px", // Adjust padding as needed
     background: "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)", // Use a gradient for a smooth transition
@@ -50,7 +51,7 @@ export const OurWork = () => {
     opacity: "0",
     transition: "opacity 0.3s ease-in-out, transform 0.3s ease-in-out", // Add transform transition
     transform: "translateY(100%)", // Initial position below the container
-    textAlign: "center",
+    textAlign: "left",
   };
 
   return (
@@ -67,7 +68,7 @@ export const OurWork = () => {
         </Col>
       </Row>
       <Row>
-      <Col style={containerStyle} md={4}>
+      <Col style={containerStyle} md={3}>
         <div
           style={containerStyle}
           onMouseOver={(e) => {
@@ -85,9 +86,82 @@ export const OurWork = () => {
             e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
           }}
         >
-          <img src="img/img.png" className="img-responsive" style={imageStyle} alt="" />
+          <img src="img/CasestudyCard.png" className="img-responsive" style={imageStyle} alt="" />
           <div style={overlayStyle} className="overlay">
-            <p>Your Text Here</p>
+            <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
+          </div>
+        </div>
+      </Col>
+      <Col style={containerStyle} md={3}>
+        <div
+          style={containerStyle}
+          onMouseOver={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "1";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(0)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(0.7)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "-10px"; // Adjust margin for flush transition
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "0";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(100%)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(1)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
+          }}
+        >
+          <img src="img/CasestudyCard2.png" className="img-responsive" style={imageStyle} alt="" />
+          <div style={overlayStyle} className="overlay">
+            <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
+          </div>
+        </div>
+      </Col>
+      <Col style={containerStyle} md={3}>
+        <div
+          style={containerStyle}
+          onMouseOver={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "1";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(0)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(0.7)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "-10px"; // Adjust margin for flush transition
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "0";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(100%)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(1)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
+          }}
+        >
+          <img src="img/CasestudyCard.png" className="img-responsive" style={imageStyle} alt="" />
+          <div style={overlayStyle} className="overlay">
+            <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
+          </div>
+        </div>
+      </Col>
+
+      <Col style={containerStyle} md={3}>
+        <div
+          style={containerStyle}
+          onMouseOver={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "1";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(0)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(0.7)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "-10px"; // Adjust margin for flush transition
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.querySelector(".overlay").style.opacity = "0";
+            e.currentTarget.querySelector(".overlay").style.transform = "translateY(100%)";
+            e.currentTarget.querySelector(".img-responsive").style.filter =
+              "brightness(1)";
+            e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
+          }}
+        >
+          <img src="img/CasestudyCard.png" className="img-responsive" style={imageStyle} alt="" />
+          <div style={overlayStyle} className="overlay">
+            <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
           </div>
         </div>
       </Col>

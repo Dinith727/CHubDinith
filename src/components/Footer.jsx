@@ -56,25 +56,29 @@ export const Footer = () => {
               </Col>
             </Col>
             <Col md={3}>
-              <h3 style={h3StyleRegular}>WHAT WE DO</h3>
+              <Col style={{ marginLeft: "10%" }} md={8}>
+                <h3 style={h3StyleRegular}>WHAT WE DO</h3>
 
-              <ul style={ulStyle}>
-                <li style={liStyle}>Product development</li>
-                <li style={liStyle}>System Integration</li>
-                <li style={liStyle}>Test Automation</li>
-                <li style={liStyle}>Independent Verification & Validation</li>
-                <li style={liStyle}>Application Development</li>
-                <li style={liStyle}>Professional Services</li>
-              </ul>
+                <ul style={ulStyle}>
+                  <li style={liStyle}>Product development</li>
+                  <li style={liStyle}>System Integration</li>
+                  <li style={liStyle}>Test Automation</li>
+                  <li style={liStyle}>Independent Verification & Validation</li>
+                  <li style={liStyle}>Application Development</li>
+                  <li style={liStyle}>Professional Services</li>
+                </ul>
+              </Col>
             </Col>
             <Col md={3}>
-              <h3 style={h3StyleRegular}>INDUSTRIES</h3>
-              <ul style={ulStyle}>
-                <li style={liStyle}>Aerospace & Defense</li>
-                <li style={liStyle}>Medical Devices</li>
-                <li style={liStyle}>Digital Health</li>
-                <li style={liStyle}>Rail & Transportation</li>
-              </ul>
+              <Col style={{ marginLeft: "10%" }} md={8}>
+                <h3 style={h3StyleRegular}>INDUSTRIES</h3>
+                <ul style={ulStyle}>
+                  <li style={liStyle}>Aerospace & Defense</li>
+                  <li style={liStyle}>Medical Devices</li>
+                  <li style={liStyle}>Digital Health</li>
+                  <li style={liStyle}>Rail & Transportation</li>
+                </ul>
+              </Col>
             </Col>
           </Row>
           <Row style={row}>
@@ -92,20 +96,24 @@ export const Footer = () => {
               </Col>
             </Col>
             <Col md={3}>
-              <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
+              <Col style={{ marginLeft: "10%" }} md={6}>
+                <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
 
-              <span style={liStyle}>Careers</span>
+                <span style={liStyle}>Careers</span>
+              </Col>
             </Col>
             <Col md={3}>
-              <i
-                style={{ marginRight: "20px", height: "200px" }}
-                className="fa fa-linkedin"
-              ></i>
-              <i
-                style={{ marginRight: "20px", height: "200px" }}
-                className="fa fa-instagram"
-              ></i>
-              <i className="fa fa-twitter"></i>
+              <Col style={{ marginLeft: "10%" }} md={6}>
+                <i
+                  style={{ marginRight: "20px", height: "200px" }}
+                  className="fa fa-linkedin"
+                ></i>
+                <i
+                  style={{ marginRight: "20px", height: "200px" }}
+                  className="fa fa-instagram"
+                ></i>
+                <i className="fa fa-twitter"></i>
+              </Col>
             </Col>
           </Row>
         </div>

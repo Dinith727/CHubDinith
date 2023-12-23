@@ -28,7 +28,7 @@ export const Nuclear = () => {
     <div className="container">
       <Row style={row}>
         {columns.map((col, index) => (
-          <Col key={index} lg={3}>
+          <Col style={{marginBottom: "10px"}} key={index} lg={3}>
             <img
               src={hoveredCol === index ? col.hoveredImage : col.image}
               className="img-responsive"
