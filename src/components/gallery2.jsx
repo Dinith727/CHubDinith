@@ -3,12 +3,12 @@ import Table from "react-bootstrap/Table";
 import { Row, Col } from "react-bootstrap";
 
 const agendaData = [
-  { id: 1, title: "Embedded Systems Development", imageUrl: "img/img.png" },
-  { id: 2, title: "System Integration", imageUrl: "img/about.jpg" },
-  { id: 3, title: "Test Automation", imageUrl: "img/about.jpg" },
-  { id: 4, title: "Professional Services", imageUrl: "img/img.png" },
-  { id: 5, title: "Application Development", imageUrl: "img/about.jpg" },
-  { id: 6, title: "Verification and Validation", imageUrl: "img/about.jpg" },
+  { id: 1, title: "Embedded Systems Development", imageUrl: "img/Rectangle1.png" },
+  { id: 2, title: "System Integration", imageUrl: "img/Rectangle2.png" },
+  { id: 3, title: "Test Automation", imageUrl: "img/Rectangle3.png" },
+  { id: 4, title: "Professional Services", imageUrl: "img/Rectangle4.png" },
+  { id: 5, title: "Application Development", imageUrl: "img/Rectangle5.png" },
+  { id: 6, title: "Verification and Validation", imageUrl: "img/Rectangle6.png" },
   // Add more items as needed
 ];
 
@@ -49,8 +49,10 @@ const Gallery2 = () => {
 
   const imageStyle = {
     width: "auto",
-    height: "30vh",
-    border: "1px solid #ccc",
+    height: "40vh",
+  
+    margin: "auto", // Center the image horizontally
+    display: "block", // Make sure the margin:auto works
   };
 
   return (
@@ -68,7 +70,7 @@ const Gallery2 = () => {
       </Row>
       <Row>
         <Col md={6}>
-          <Table  hover>
+          <Table style={{height:"400px", width:"70%", marginTop:"40px"}} hover>
             <tbody>
               {agendaData.map((item) => (
                 <tr
