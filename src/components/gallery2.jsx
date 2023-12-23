@@ -67,7 +67,7 @@ const Gallery2 = () => {
       </Row>
       <Row>
         <Col md={6}>
-          <Table striped bordered hover>
+          <Table  hover>
             <tbody>
               {agendaData.map((item) => (
                 <tr
