@@ -12,6 +12,7 @@ export const Footer = () => {
     fontFamily: "sans-serif",
     fontWeight: 30,
     lineHeight: "34px",
+    fontSize: "15px",
     color:"white"
   };
 
@@ -23,7 +24,16 @@ export const Footer = () => {
   const liStyle = {
     fontFamily: "sans-serif",
     fontWeight: 80,
-    fontSize: "16px",
+    fontSize: "14px",
+    lineHeight: "25px",
+    marginBottom: "10px",
+    color:"white"
+  };
+
+  const liStyle1 = {
+    fontFamily: "sans-serif",
+    fontWeight: 80,
+    fontSize: "10px",
     lineHeight: "25px",
     marginBottom: "10px",
     color:"white"
@@ -33,7 +43,7 @@ export const Footer = () => {
     <div style={{ backgroundColor: "#1A1A1A" }}>
       <div id="contact">
         <div  className="container">
-          <Row>
+          <Row style={{marginTop:"70px"}}>
             <Col md={6}>
               <Col md={10}>
                 <div>
@@ -70,9 +80,9 @@ export const Footer = () => {
           </Row>
           <Row style={row}>
             <Col md={6} className="d-flex justify-content-between">
-              <span style={{ ...liStyle, marginRight: "20px" }}>Terms & Conditions</span>
+              <span style={{ ...liStyle1, marginRight: "20px" }}>Terms & Conditions</span>
 
-              <span style={liStyle}>Privacy Policy</span>
+              <span style={liStyle1}>Privacy Policy</span>
             </Col>
             <Col md={3}>
               <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
