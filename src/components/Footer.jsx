@@ -4,12 +4,15 @@ import { Col, Row } from "react-bootstrap";
 export const Footer = () => {
   const row = {
     marginTop: "100px",
+    color:"white"
   };
+  
 
   const h3StyleRegular = {
     fontFamily: "sans-serif",
     fontWeight: 30,
     lineHeight: "34px",
+    color:"white"
   };
 
   const ulStyle = {
@@ -23,12 +26,13 @@ export const Footer = () => {
     fontSize: "16px",
     lineHeight: "25px",
     marginBottom: "10px",
+    color:"white"
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#1A1A1A" }}>
       <div id="contact">
-        <div className="container">
+        <div  className="container">
           <Row>
             <Col md={6}>
               <Col md={10}>
