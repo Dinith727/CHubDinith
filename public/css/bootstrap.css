@@ -1599,7 +1599,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1400px;
   }
 }
 .container-fluid {
@@ -4509,11 +4509,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #5e5e5e;
   background-color: transparent;
 }
-.navbar-default .navbar-text {
+.navbar-default .solid .navbar-text {
+  color: #777;
+}
+.navbar-default.solid .navbar-nav > li > a {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {

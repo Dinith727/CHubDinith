@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 
 export const Navigation = (props) => {
   const [scrolled, setScrolled] = useState(false);
 
   const buttonStyle = {
-    marginTop: "40px",
-    backgroundColor: scrolled ? 'black' : 'transparent',
-    color: scrolled ? 'white' : 'black',
-    border: '2px solid black',
-    borderRadius: '30px',
-    padding: '10px 40px',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s, color 0.3s',
+    marginTop:"5px",
+    backgroundColor:"transparent",
+    color: scrolled ? "black" : "white",
+    border: scrolled ? "2px solid black" : "2px solid white",
+    borderRadius: "30px",
+    padding: "10px 40px",
+    cursor: "pointer",
+    transition: "background-color 0.3s, color 0.3s",
+    float:"inline-end"
+    
   };
 
   useEffect(() => {
@@ -28,18 +30,25 @@ export const Navigation = (props) => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
 
+  const logoSrc = scrolled ? "/img/48858.png" : "/img/Logo-white.png";
+
   return (
-    <nav id="menu" className={`navbar navbar-default navbar-fixed-top ${scrolled ? 'solid' : ''}`}>
+    <nav
+      id="menu"
+      className={`navbar navbar-default navbar-fixed-top ${
+        scrolled ? "solid" : ""
+      }`}
+    >
       <div className="container">
         <div className="navbar-header">
-        <button
+          <button
             type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
@@ -52,12 +61,18 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="page-scroll" href="#page-top">
-            <img src="/img/48858.png" height={50} />{" "}
-          </a>{" "}
+          <img src={logoSrc} height={50} />{" "}
+        </a>{" "}
         </div>
 
-        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-left" style={{ marginLeft: "50px" }}>
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul
+            className="nav navbar-nav navbar-left"
+            style={{ marginLeft: "50px" }}
+          >
             <li>
               <a href="#features" className="page-scroll">
                 About
@@ -78,17 +93,15 @@ export const Navigation = (props) => {
                 Resources
               </a>
             </li>
-            {/* Uncomment the following lines if you want to include the button in the navigation */}
-            {/* <li>
-              <Button
-                style={buttonStyle}
-                onMouseEnter={() => setScrolled(true)}
-                onMouseLeave={() => setScrolled(false)}
-              >
-                Learn More
-              </Button>
-            </li> */}
           </ul>
+
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setScrolled(true)}
+            onMouseLeave={() => setScrolled(false)}
+          >
+            Learn More
+          </Button>
         </div>
       </div>
     </nav>
