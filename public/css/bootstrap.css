@@ -4493,8 +4493,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  color:white !important;
+  background-color:transparent;
+  /* border-color: #e7e7e7; */
+  transition: background-color 0.5s ease;
+}
+.solid {
+  background-color:white !important; /* Set the solid color when scrolled */
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -6754,4 +6759,3 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
