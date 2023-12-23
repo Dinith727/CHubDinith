@@ -18,17 +18,22 @@ export const Nuclear = () => {
   };
 
   const columns = [
-    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
-    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
-    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
-    { image: "/img/plane1.png", hoveredImage: "/img/plane2.png" },
+    { image: "/img/Areo.png", hoveredImage: "/img/AreoHoverd.png" },
+    { image: "/img/Health.png", hoveredImage: "/img/HealthHoverd.png" },
+    { image: "/img/Rail.png", hoveredImage: "/img/RailHoverd.png" },
+    { image: "/img/Medical.png", hoveredImage: "/img/MedicalHoved.png" },
   ];
 
   return (
     <div className="container">
       <Row style={row}>
         {columns.map((col, index) => (
-          <Col style={{marginBottom: "10px"}} key={index} lg={3}>
+          <Col style={{
+            marginBottom: "10px",
+            transition: "transform 0.3s ease", // Smooth transition
+            transform:
+              hoveredCol === index ? "scale(1.1)" : "scale(1)", // Scale on hover
+          }} key={index} lg={3}>
             <img
               src={hoveredCol === index ? col.hoveredImage : col.image}
               className="img-responsive"
