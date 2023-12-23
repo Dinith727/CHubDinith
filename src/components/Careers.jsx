@@ -12,7 +12,7 @@ export const Careers = () => {
     fontFamily: "sans-serif",
     fontSize: "48px",
     fontWeight: 100,
-    lineHeight: "64px",
+    lineHeight: "54px",
     letterSpacing: "0em",
     textAlign: "left",
     marginTop: "0",
@@ -23,11 +23,12 @@ export const Careers = () => {
     fontFamily: "sans-serif",
     fontWeight: 80,
     lineHeight: "34px",
+    fontSize: "15px",
   };
 
   const boldWordStyle = {
     fontFamily: "sans-serif",
-    fontSize: "16px",
+    fontSize: "15px",
     fontWeight: "304",
     textAlign: "left",
     color: "black",
@@ -39,7 +40,7 @@ export const Careers = () => {
     color: isHovered ? "white" : "black",
     border: "2px solid black",
     borderRadius: "30px",
-    padding: "10px 40px",
+    padding: "5px 25px",
     cursor: "pointer",
     transition: "background-color 0.3s, color 0.3s",
   };
