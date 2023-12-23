@@ -7,6 +7,7 @@ export const Header = () => {
     backgroundSize: "cover",
     display: "table",
     width: "100%",
+    height:"100%",
     padding: "0",
   };
 
@@ -36,8 +37,9 @@ export const Header = () => {
   };
 
   const introTextStyle = {
-    paddingTop: "350px",
-    paddingBottom: "100px",
+    paddingTop: "450px",
+    paddingBottom: "10px",
+    marginLeft:"10%"
   };
 
   return (
@@ -46,10 +48,10 @@ export const Header = () => {
         <div className="overlay" style={overlayStyle}>
           <div className="container">
             <div className="row">
-              <div className="intro-text" style={introTextStyle}>
+              <div  style={introTextStyle}>
                 <p style={pStyle}>Extra Aspirational</p>
                 <h1 style={h1Style}>
-                  Avero. <span style={spanStyle}>Pushing engineering forward.</span>
+                  Avero. <span style={spanStyle}>Pushing <br/>engineering forward.</span>
                 </h1>
               </div>
             </div>

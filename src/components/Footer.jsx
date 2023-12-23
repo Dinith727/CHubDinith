@@ -4,16 +4,15 @@ import { Col, Row } from "react-bootstrap";
 export const Footer = () => {
   const row = {
     marginTop: "100px",
-    color:"white"
+    color: "white",
   };
-  
 
   const h3StyleRegular = {
     fontFamily: "sans-serif",
     fontWeight: 30,
     lineHeight: "34px",
     fontSize: "15px",
-    color:"white"
+    color: "white",
   };
 
   const ulStyle = {
@@ -27,7 +26,7 @@ export const Footer = () => {
     fontSize: "14px",
     lineHeight: "25px",
     marginBottom: "10px",
-    color:"white"
+    color: "white",
   };
 
   const liStyle1 = {
@@ -36,16 +35,16 @@ export const Footer = () => {
     fontSize: "10px",
     lineHeight: "25px",
     marginBottom: "10px",
-    color:"white"
+    color: "white",
   };
 
   return (
     <div style={{ backgroundColor: "#1A1A1A" }}>
       <div id="contact">
-        <div  className="container">
-          <Row style={{marginTop:"70px"}}>
+        <div className="container">
+          <Row style={{ marginTop: "70px" }}>
             <Col md={6}>
-              <Col md={10}>
+              <Col style={{ marginLeft: "10%" }} md={8}>
                 <div>
                   <h3 style={h3StyleRegular}>
                     Aversan Inc. is a multi-service engineering firm
@@ -79,10 +78,18 @@ export const Footer = () => {
             </Col>
           </Row>
           <Row style={row}>
-            <Col md={6} className="d-flex justify-content-between">
-              <span style={{ ...liStyle1, marginRight: "20px" }}>Terms & Conditions</span>
+            <Col md={6}>
+              <Col
+                style={{ marginLeft: "10%" }}
+                md={6}
+                className="d-flex justify-content-between"
+              >
+                <span style={{ ...liStyle1, marginRight: "20px" }}>
+                  Terms & Conditions
+                </span>
 
-              <span style={liStyle1}>Privacy Policy</span>
+                <span style={liStyle1}>Privacy Policy</span>
+              </Col>
             </Col>
             <Col md={3}>
               <span style={{ ...liStyle, marginRight: "20px" }}>Culture</span>
@@ -90,8 +97,14 @@ export const Footer = () => {
               <span style={liStyle}>Careers</span>
             </Col>
             <Col md={3}>
-              <i style={{ marginRight: "20px", height:"200px" }} className="fa fa-linkedin"></i>
-              <i style={{ marginRight: "20px", height:"200px" }}className="fa fa-instagram"></i>
+              <i
+                style={{ marginRight: "20px", height: "200px" }}
+                className="fa fa-linkedin"
+              ></i>
+              <i
+                style={{ marginRight: "20px", height: "200px" }}
+                className="fa fa-instagram"
+              ></i>
               <i className="fa fa-twitter"></i>
             </Col>
           </Row>

@@ -4,17 +4,23 @@ import { Row, Col, Button } from "react-bootstrap";
 export const Navigation = (props) => {
   const [scrolled, setScrolled] = useState(false);
 
+  const h3StyleRegular = {
+    fontFamily: "sans-serif",
+    fontWeight: 80,
+    lineHeight: "34px",
+    fontSize: "18px",
+    marginLeft: "50px"
+  };
   const buttonStyle = {
-    marginTop:"5px",
-    backgroundColor:"transparent",
+    marginTop: "5px",
+    backgroundColor: "transparent",
     color: scrolled ? "black" : "white",
     border: scrolled ? "2px solid black" : "2px solid white",
     borderRadius: "30px",
     padding: "10px 40px",
     cursor: "pointer",
     transition: "background-color 0.3s, color 0.3s",
-    float:"inline-end"
-    
+    float: "inline-end",
   };
 
   useEffect(() => {
@@ -46,7 +52,10 @@ export const Navigation = (props) => {
         scrolled ? "solid" : ""
       }`}
     >
-      <div className="container">
+      <div
+        style={{ marginTop: "20px", marginBottom: "10px" }}
+        className="container"
+      >
         <div className="navbar-header">
           <button
             type="button"
@@ -61,8 +70,8 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="page-scroll" href="#page-top">
-          <img src={logoSrc} height={50} />{" "}
-        </a>{" "}
+            <img src={logoSrc} height={50} />{" "}
+          </a>{" "}
         </div>
 
         <div
@@ -71,7 +80,8 @@ export const Navigation = (props) => {
         >
           <ul
             className="nav navbar-nav navbar-left"
-            style={{ marginLeft: "50px" }}
+            // style={{ marginLeft: "50px" }}
+            style={h3StyleRegular}
           >
             <li>
               <a href="#features" className="page-scroll">
@@ -100,7 +110,7 @@ export const Navigation = (props) => {
             onMouseEnter={() => setScrolled(true)}
             onMouseLeave={() => setScrolled(false)}
           >
-            Learn More
+            Talk To an Expert
           </Button>
         </div>
       </div>

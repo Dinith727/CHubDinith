@@ -9,7 +9,7 @@ import  Gallery2  from "./components/gallery2";
 import { Footer } from "./components/Footer";
 import "./App.css";
 import { Traditional } from "./components/traditional";
-import { Blogs } from "./components/blogs";
+import { Blogs } from "./components/Blogs";
 
 const App = () => {
   return (
