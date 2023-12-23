@@ -12,7 +12,7 @@ export const Header = () => {
   };
 
   const overlayStyle = {
-    background: "rgba(0, 0, 0, 0.2)",
+    background: "rgba(0, 0, 0, 0)",
   };
 
   const h1Style = {
@@ -31,7 +31,7 @@ export const Header = () => {
   const pStyle = {
     color: "#fff",
     fontSize: "22px",
-    fontWeight: "300",
+    fontWeight: "400",
     lineHeight: "30px",
     margin: "0 auto",
   };
@@ -39,7 +39,7 @@ export const Header = () => {
   const introTextStyle = {
     paddingTop: "450px",
     paddingBottom: "10px",
-    marginLeft:"10%"
+    marginLeft:"3%"
   };
 
   return (
