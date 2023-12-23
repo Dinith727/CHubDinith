@@ -39,6 +39,7 @@ const Gallery2 = () => {
   const h3StyleRegular = {
     fontFamily: "sans-serif",
     fontWeight: 80,
+    fontSize: "20px",
     lineHeight: "34px",
   };
 

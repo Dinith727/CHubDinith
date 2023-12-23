@@ -11,6 +11,7 @@ export const Traditional = () => {
   const h3StyleRegular = {
     fontFamily: "sans-serif",
     fontWeight: 80,
+    fontSize: "20px",
     lineHeight: "44px",
     color: "black",
   };
