@@ -134,7 +134,7 @@ export const OurWork = () => {
             e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
           }}
         >
-          <img src="img/CasestudyCard.png" className="img-responsive" style={imageStyle} alt="" />
+          <img src="img/CasestudyCard3.png" className="img-responsive" style={imageStyle} alt="" />
           <div style={overlayStyle} className="overlay">
             <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
           </div>
@@ -159,7 +159,7 @@ export const OurWork = () => {
             e.currentTarget.querySelector(".img-responsive").style.marginBottom = "0";
           }}
         >
-          <img src="img/CasestudyCard.png" className="img-responsive" style={imageStyle} alt="" />
+          <img src="img/CasestudyCard4.png" className="img-responsive" style={imageStyle} alt="" />
           <div style={overlayStyle} className="overlay">
             <p style={{marginLeft:"6%"}}>Consent Directive for provincial Integrated Client Management Sysytem</p>
           </div>
