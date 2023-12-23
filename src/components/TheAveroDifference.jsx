@@ -35,7 +35,7 @@ export const TheAveroDifference = () => {
     color: isHovered ? "white" : "black",
     border: "2px solid black",
     borderRadius: "30px",
-    padding: "10px 40px",
+    padding: "5px 25px",
     cursor: "pointer",
     transition: "background-color 0.3s, color 0.3s",
   };
