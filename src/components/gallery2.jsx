@@ -21,7 +21,6 @@ const Gallery2 = () => {
 
   const row = {
   
-    marginTop: "100px",
     marginBottom: "160px",
   };
 
@@ -103,34 +102,6 @@ const Gallery2 = () => {
         </Col>
       </Row>
     </div>
-    // <div style={{ display: "flex", alignItems: "flex-start" }}>
-    //   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-    //     {agendaData.map((item) => (
-    //       <li
-    //         key={item.id}
-    //         style={{
-    //           ...agendaItemStyle,
-    //           ...(hoveredItemId === item.id ? hoveredItemStyle : {}),
-    //         }}
-    //         onMouseEnter={() => handleItemHover(item.id)}
-    //         onMouseLeave={() => handleItemHover(null)}
-    //       >
-    //         <h3>{item.id}</h3>
-    //         <h3>{item.title}</h3>
-
-    //       </li>
-    //     ))}
-    //   </ul>
-    //   <div style={{ marginLeft: "20px" }}>
-    //     {hoveredItemId !== null && (
-    //       <img
-    //         src={agendaData.find((item) => item.id === hoveredItemId)?.imageUrl}
-    //         alt={`Item ${hoveredItemId}`}
-    //         style={imageStyle}
-    //       />
-    //     )}
-    //   </div>
-    // </div>
   );
 };
 

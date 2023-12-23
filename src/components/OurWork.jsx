@@ -43,7 +43,7 @@ export const OurWork = () => {
     position: "absolute",
     bottom: "0",
     left: "0",
-    fontSize: "20px",
+    fontSize: "1.5rem",
     width: "100%",
     padding: "10px", // Adjust padding as needed
     background: "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)", // Use a gradient for a smooth transition

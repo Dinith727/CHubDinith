@@ -106,7 +106,7 @@ export const Blogs = () => {
     <div style={row} className="container">
       <Row>
         <Col md={11}>
-          <h3 style={boldWordStyle}>Blogs</h3>
+          <h3 style={boldWordStyle}>BLOGS</h3>
           <h1 style={h1StyleRegular}>Insightful Insights</h1>
         </Col>
       </Row>
