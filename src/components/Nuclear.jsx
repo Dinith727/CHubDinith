@@ -30,7 +30,7 @@ export const Nuclear = () => {
         {columns.map((col, index) => (
           <Col style={{
             marginBottom: "10px",
-            transition: "transform 0.3s ease", // Smooth transition
+            transition: "transform 0.8s ease", // Smooth transition
             transform:
               hoveredCol === index ? "scale(1.1)" : "scale(1)", // Scale on hover
           }} key={index} lg={3}>
